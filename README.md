@@ -1,6 +1,9 @@
-<h1 align="center">
-  🚀 Kubernetes ConfigMap Demo
-</h1>
+<!-- 🧵 Banner -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Jotheesh2002/assets/main/professional-devops-banner.gif" width="100%" alt="Professional DevOps GIF Banner"/>
+</p>
+
+<h1 align="center">🚀 TVM Infotech Assessment Task for AWS DevOps Enginner Role</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kubernetes-v1.33-blue?style=for-the-badge&logo=kubernetes" />
@@ -9,36 +12,39 @@
 </p>
 
 <p align="center">
-  <strong>✨ TVM Infotech Task Submission ✨</strong><br>
-  <i>Created with ❤️ by Jotheesh V | Assigned by Yogi Mam (HR)</i>
+  <strong>✨  Kubernetes ConfigMap Demo ✨</strong><br>
+  <i>🎯 Task Given by: <strong>Yogi Ma'am (Technical HR)</strong><br>🎓 Prepared by: <strong>Jotheeshwaran V</strong></i>
 </p>
 
 ---
 
-## 📚 Table of Contents
+## 🧠 Project Overview
 
-- [📌 About](#-about)
-- [📁 Project Structure](#-project-structure)
-- [🛠️ Setup Instructions](#️-setup-instructions)
-- [🚦 Execution Flow](#-execution-flow)
-- [📸 Screenshots](#-screenshots)
-- [📬 Contact](#-contact)
+This project demonstrates the use of **Kubernetes ConfigMaps** to manage and inject configuration into pods using **two different methods**:
+
+- 🔧 As **environment variables**
+- 📂 As **volume-mounted configuration files**
+
+It showcases how to **decouple application configs** from container images, allowing for greater **flexibility**, **portability**, and **automation** in real-world DevOps workflows.
+
+> 📌 Designed as part of an evaluation task for **TVM Infotech Pvt. Ltd.**, under the supervision of **Yogi Ma’am (HR)**.
+
+---
+
+## 👨‍💻 Author
+
+<div align="center" style="margin-top: 2rem; margin-bottom: 2rem; animation: fadeInUp 2s ease-in-out;">
+  <img src="./Screenshots/joshpics.jpg" width="120" style="border-radius: 50%; border: 4px solid #2563eb; animation: pulse 3s infinite;" alt="Jotheeshwaran Avatar">
+  <h3 style="color:#1d4ed8; font-weight:700; font-size:1.75rem; margin-top: 0.5rem; animation: zoomIn 1s ease-in-out;">Jotheeshwaran V</h3>
+  <p style="color:#6b7280; font-size:1.05rem;">
+    📧 <strong>Email:</strong> <a href="mailto:jotheeshwaranv2002@gmail.com">jotheeshwaranv2002@gmail.com</a><br/>
+    🌐 <strong>Portfolio:</strong> <a href="https://unique-crepe-5ea0e0.netlify.app" target="_blank">unique-crepe-5ea0e0.netlify.app</a><br/>
+    🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/jotheeshwaran-v" target="_blank">linkedin.com/in/jotheeshwaran-v</a>
+  </p>
+</div>
 
 ---
 
-## 📌 About
-
-This project demonstrates the use of **Kubernetes ConfigMaps** to inject application configuration into pods. Two methods are shown:
-
-- As **environment variables**
-- As **mounted volumes**
-
-> 💼 Task Assigned by: **TVM Infotech Pvt. Ltd.**
->  
-> 🧑‍🏫 Supervisor: **Yogi Mam (HR)**  
-> 🗓️ Completed on: August 2025
-
----
 
 ## 📁 Project Structure
 
@@ -79,36 +85,93 @@ cat /etc/config/APP_MODE
 cat /etc/config/APP_PORT
 ```
 
+<h2>📸 Output Screenshots</h2>
+
+<div align="center">
+
+<!-- Screenshot Grid -->
+<table>
+  <tr>
+    <td align="center">
+      <strong>🟢 Step 1: ConfigMap Created</strong><br/>
+      <img src="./screenshots/step1-configmap-created.png" alt="Step 1" width="400px"/>
+    </td>
+    <td align="center">
+      <strong>🟢 Step 2: Pods Deployed</strong><br/>
+      <img src="./screenshots/step2-pods-deployed.png" alt="Step 2" width="400px"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>🟢 Step 3: Pods Verified</strong><br/>
+      <img src="./screenshots/step3-pods-verified.png" alt="Step 3" width="400px"/>
+    </td>
+    <td align="center">
+      <strong>🟢 Step 4: Logs from ENV Pod</strong><br/>
+      <img src="./screenshots/step4-env-logs.png" alt="Step 4" width="400px"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <strong>🟢 Step 5: Volume Pod Validation</strong><br/>
+      <img src="./screenshots/step5-volume-pod-check.png" alt="Step 5" width="400px"/>
+    </td>
+    <td align="center">
+      <strong>🟢 Step 6: GitHub Upload</strong><br/>
+      <img src="./screenshots/step6-github-upload.png" alt="Step 6" width="400px"/>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
+
+---
+
 🚦 Execution Flow
-Task	Status
+```Task	Status
 Create Minikube cluster	✅ Done
 Create ConfigMap	✅ Done
 Inject ConfigMap as ENV variables	✅ Done
 Inject ConfigMap as Volume	✅ Done
 Logs and validation screenshots	✅ Done
+```
+---
 
-📸 Screenshots
-All screenshots are provided inside the screenshots/ folder
+## ✅ Features
 
-Description	Preview
-✅ Minikube Started	
-✅ ConfigMap Created	
-✅ Pod using Env Variables	
-✅ Pod using Volume Mount	
-✅ ConfigMap Values inside Container	
+- 📂 Kubernetes **ConfigMap** integration
+- 🌐 **Two deployment styles**: via ENV vars & via Volumes
+- 📦 **Minikube local cluster** setup on MacBook M2
+- 🔍 Verified via `kubectl logs` and container shell access
+- 📸 Proof included through **screenshots folder**
+- ✍️ Clean folder layout with `*.yaml` manifests and config
 
-📦 Note: Replace the image paths above with your actual screenshot names inside screenshots/
+---
 
-🧠 Fun Fact
-ConfigMaps are like environment notes 📋 Kubernetes reads every time it runs your pod!
+## 💡 Future Enhancements
 
-📬 Contact
-If you'd like to connect:
+- 🔁 Integrate with **GitHub Actions** for YAML linting
+- 📊 Add **Prometheus + Grafana** for monitoring
+- 🛡️ Extend to use **Secrets** for sensitive configs
+- 🔐 RBAC policies for access control
+- 📦 Convert ConfigMap to Helm Chart for scalability
 
-📧 Email: jotheeshv@example.com (replace with your actual email)
+---
 
-💼 LinkedIn: linkedin.com/in/jotheeshv (if applicable)
+## 🙋‍♂️ Author
 
-📂 GitHub: github.com/your-username
+**👨‍💻 Jotheeshwaran V**  
+📍 Chennai, India  
+📞 8667782566  
+📬 [jotheeshwaran2002@gmail.com](mailto:jotheeshwaran2002@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/jotheeshwaran-v)  
+🔗 [GitHub](https://github.com/Jotheesh2002)
 
-<p align="center"> Made with ❤️ for TVM Infotech Pvt. Ltd. </p> ```
+---
+
+## ⚖️ License
+
+This project is licensed under the **MIT License**.  
+Feel free to ⭐ star, fork 🍴, and contribute 🛠️!
