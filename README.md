@@ -3,7 +3,7 @@
   <img src="https://raw.githubusercontent.com/Jotheesh2002/assets/main/professional-devops-banner.gif" width="100%" alt="Professional DevOps GIF Banner"/>
 </p>
 
-<h1 align="center">🚀 TVM Infotech Assessment Task for AWS DevOps Enginner Role</h1>
+<h1 align="center">🚀 TVM Infotech Assessment Task for AWS DevOps Engineer Role</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kubernetes-v1.33-blue?style=for-the-badge&logo=kubernetes" />
