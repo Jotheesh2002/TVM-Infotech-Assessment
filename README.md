@@ -84,47 +84,31 @@ kubectl exec -it app-pod-vol -- sh
 cat /etc/config/APP_MODE
 cat /etc/config/APP_PORT
 ```
+<h2>📷 Output Screenshots</h2>
 
-<h2>📸 Output Screenshots</h2>
-
-<div align="center">
-
-<!-- Screenshot Grid -->
-<table>
-  <tr>
-    <td align="center">
-      <strong>🟢 Step 1: ConfigMap Created</strong><br/>
-      <img src="./screenshots/step1-configmap-created.png" alt="Step 1" width="400px"/>
-    </td>
-    <td align="center">
-      <strong>🟢 Step 2: Pods Deployed</strong><br/>
-      <img src="./screenshots/step2-pods-deployed.png" alt="Step 2" width="400px"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>🟢 Step 3: Pods Verified</strong><br/>
-      <img src="./screenshots/step3-pods-verified.png" alt="Step 3" width="400px"/>
-    </td>
-    <td align="center">
-      <strong>🟢 Step 4: Logs from ENV Pod</strong><br/>
-      <img src="./screenshots/step4-env-logs.png" alt="Step 4" width="400px"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>🟢 Step 5: Volume Pod Validation</strong><br/>
-      <img src="./screenshots/step5-volume-pod-check.png" alt="Step 5" width="400px"/>
-    </td>
-    <td align="center">
-      <strong>🟢 Step 6: GitHub Upload</strong><br/>
-      <img src="./screenshots/step6-github-upload.png" alt="Step 6" width="400px"/>
-    </td>
-  </tr>
-</table>
-
+<!-- Row 1 -->
+<div style="display: flex; justify-content: center; gap: 20rem; flex-wrap: wrap; margin-bottom: 20rem;">
+  <div style="flex: 1 1 45%; text-align: center;">
+    <h3>✅ Docker Desktop - Kubernetes Start </h3>
+    <img src="Screenshots/Docker Desktop.png" alt="API Output" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;" />
+  </div>
+  <div style="flex: 1 1 45%; text-align: center;">
+  <h3>✅ k8 Pods Status  </h3>
+    <img src="Screenshots/Pods Status.png" alt="API Output" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;" />
+  </div>
+  <div style="flex: 1 1 45%; text-align: center;">
+    <h3>✅ Check Logs from ENV-Based Pod </h3>
+    <img src="Screenshots/Check Logs from ENV-Based Pod.png" alt="Docker Runtime" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;" />
+  </div>
+  <div style="flex: 1 1 45%; text-align: center;">
+    <h3>✅ Volume Pods</h3>
+    <img src="Screenshots/Volume Pod.png" alt="Docker Runtime" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;" />
+  </div>
+  <div style="flex: 1 1 45%; text-align: center;">
+    <h3>✅ Exec into Volume Pod and Validate</h3>
+    <img src="Screenshots/Exec into Volume Pod and Validate.png" alt="Docker Ps Output" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;" />
+  </div>
 </div>
-
 
 
 ---
